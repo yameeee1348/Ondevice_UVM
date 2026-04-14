@@ -1,0 +1,17 @@
+#RTL
+./rtl/baud_rate_gen.sv
+./rtl/uart_tx.sv
+./rtl/uart_rx.sv
+./rtl/sync_2ff.sv
+./rtl/uart.sv
+#TB
+./tb/tb_uart_uvm.sv
+#./tb/ram_agent.sv
+#./tb/ram_driver.sv
+#./tb/ram_env.sv
+#./tb/ram_interface.sv
+#./tb/ram_monitor.sv
+#./tb/ram_agent.sv
+#./tb/ram_agent.sv
+#./tb/ram_agent.sv
+#./tb/ram_agent.sv

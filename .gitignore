@@ -1,0 +1,13 @@
+# Simulation & Debug files
+*.fsdb
+simv
+simv.*
+csrc/
+*.log
+*.vpd
+*.key
+*.daidir/
+DVEfiles/
+verdiLog/
+novas.*
+novas_dump.log
