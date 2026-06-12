@@ -15,13 +15,13 @@ class uart_seq_item extends uvm_sequence_item;
 
     function new(string name = "uart_seq_item");
         super.new(name);
-    endfunction //new()
+    endfunction 
 
     virtual function string convert2string();
         return $sformatf("UART_DATA = 8'h0h", data);
     endfunction
     
-endclass //
+endclass 
 
 
 

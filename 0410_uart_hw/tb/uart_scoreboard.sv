@@ -59,7 +59,7 @@ class uart_scoreboard extends uvm_scoreboard;
         
     endfunction
 
-    // 3. 시뮬레이션 종료 시 잔여 데이터 확인 (Check Phase)
+    // 3. Check Phase
     virtual function void check_phase(uvm_phase phase);
         super.check_phase(phase);
 

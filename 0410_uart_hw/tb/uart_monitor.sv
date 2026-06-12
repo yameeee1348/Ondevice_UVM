@@ -19,7 +19,7 @@ class uart_monitor extends uvm_monitor;
         super.new(name, parent);
         mon_ap_rx = new("mon_ap_rx", this);
         mon_ap_tx = new("mon_ap_tx", this);
-    endfunction //new()
+    endfunction 
 
 
     virtual function void build_phase(uvm_phase phase);

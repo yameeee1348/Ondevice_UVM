@@ -37,7 +37,7 @@ class uart_coverage extends uvm_subscriber #(uart_seq_item);
     // Monitor에서 포트를 통해 데이터가 넘어오면 자동으로 실행되는 함수
     virtual function void write(uart_seq_item t);
         item = t;
-        uart_cg.sample(); // 커버리지 갱신!
+        uart_cg.sample(); 
     endfunction
 
     // 시뮬레이션 종료 후 결과 출력

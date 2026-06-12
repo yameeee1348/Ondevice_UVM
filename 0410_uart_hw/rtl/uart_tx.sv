@@ -46,7 +46,7 @@ module uart_tx (
 
     // next, output logic
     always_comb begin
-        n_state          = c_state; // 래치 방지를 위해 현재값을 기본값으로 설정
+        n_state          = c_state; 
         tx_next          = tx_reg;
         bit_cnt_next     = bit_cnt_reg;
         b_tick_cnt_next  = b_tick_cnt_reg;

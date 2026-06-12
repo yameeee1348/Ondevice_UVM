@@ -12,7 +12,7 @@ class uart_base_seq extends uvm_sequence#(uart_seq_item);
 
     function new(string name = "uart_base_seq");
         super.new(name);
-    endfunction //new()
+    endfunction 
 
     task  send_data(bit [7:0] d);
         uart_seq_item item = uart_seq_item::type_id::create("item");
@@ -26,14 +26,14 @@ class uart_base_seq extends uvm_sequence#(uart_seq_item);
 
         `uvm_info(get_type_name(), $sformatf("send_data() 전송 완료: data = 8'h%0h ", d), UVM_HIGH)
 
-    endtask //
+    endtask 
 
     virtual task  body();
         
-    endtask //
+    endtask 
 
 
-endclass //
+endclass 
 
 class uart_rand_seq extends uart_base_seq;
     `uvm_object_utils(uart_rand_seq)
@@ -41,7 +41,7 @@ class uart_rand_seq extends uart_base_seq;
     function new(string name= "uart_rand_seq");
         super.new(name);
 
-    endfunction //new()
+    endfunction 
 
     virtual task  body();
         `uvm_info(get_type_name(), $sformatf("Starting Random Sequence (%0d times)...",num_loop), UVM_LOW)
@@ -56,25 +56,25 @@ class uart_rand_seq extends uart_base_seq;
             end
             finish_item(item);
         end
-    endtask //
-endclass //uart_rand_seq 
+    endtask 
+endclass 
 
 
 
 // ---------------------------------------------------------
-// 3. Pattern Sequence (Coverage 100% 달성을 위한 코너케이스)
+// 3. Pattern Sequence
 // ---------------------------------------------------------
 class uart_pattern_seq extends uart_base_seq;
     `uvm_object_utils(uart_pattern_seq)
 
     function new(string name="uart_pattern_seq");
         super.new(name);
-    endfunction //new()
+    endfunction 
 
     virtual task body();
         `uvm_info(get_type_name(), "Starting Pattern Sequence (Coverage Targeted)...", UVM_LOW)
         
-        // Coverage에서 정의했던 극단적/스트레스 패턴들을 확실하게 한 번씩 쏴줍니다.
+       
         send_data(8'h00); // All Zeros
         send_data(8'hFF); // All Ones
         send_data(8'h55); // Toggle Pattern 1 (01010101)
