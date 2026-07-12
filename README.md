@@ -2,7 +2,6 @@
 
 SystemVerilog/UVM 기반 IP 검증 학습 및 프로젝트 산출물을 정리한 저장소입니다. RAM, APB RAM, UART, SPI, I2C, AXI4-Lite SPI IP까지 단계적으로 DUT 범위를 넓히며 동일한 UVM 구조(sequence, driver, monitor, scoreboard, coverage)를 반복 적용했습니다.
 
-이 README는 면접관이 저장소를 빠르게 검토할 수 있도록 프로젝트 목적, 핵심 파일, 검증 포인트를 중심으로 정리했습니다. 개인 연락처 등 이력서의 민감 정보는 의도적으로 포함하지 않았습니다.
 
 ## Core Skills
 
