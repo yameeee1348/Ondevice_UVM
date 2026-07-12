@@ -5,13 +5,13 @@ SystemVerilog/UVM 기반 IP 검증 학습 및 프로젝트 산출물을 정리�
 
 ## Core Skills
 
-- SystemVerilog testbench 및 interface 기반 신호 추상화
-- UVM 1.2 component 구조: sequence item, sequence, driver, monitor, agent, env, scoreboard, coverage, test
+- SystemVerilog testbench
+- UVM 1.2 component 구조화: sequence item, sequence, driver, monitor, agent, env, scoreboard, coverage, test 
 - constrained/random test, mode sweep, corner/stress test 구성
 - scoreboard reference model 및 queue 기반 expected/actual 비교
 - functional coverage, cross coverage, VCS coverage 옵션 사용
-- Verdi waveform/coverage 디버깅 흐름
-- SPI, I2C, UART, APB, AXI4-Lite register interface 검증
+- Verdi waveform/coverage 디버깅
+- SPI, I2C, UART, APB, AXI4-Lite interface 검증
 
 ## Project Map
 
