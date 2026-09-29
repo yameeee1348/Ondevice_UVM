@@ -49,7 +49,7 @@ class axi_spi_monitor extends uvm_monitor;
         tx.master_data   = vif.master_tx_capture;
         tx.slave_data    = vif.mon_cb.s_tx_data;
         tx.slave_rx_val  = vif.mon_cb.s_rx_data;
-        tx.master_rx_val = vif.bd_spi_rx_data;   
+        tx.master_rx_val = vif.master_rx_capture;   
 
         `uvm_info(get_type_name(),
             $sformatf("Captured | M_TX=0x%02x S_TX=0x%02x M_RX=0x%02x S_RX=0x%02x",
