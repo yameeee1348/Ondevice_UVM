@@ -68,6 +68,7 @@ class axi_spi_driver extends uvm_driver #(axi_spi_item);
 
        
         vif.axi_read(4'hC, rdata);
+        vif.master_rx_capture = rdata[7:0];
         `uvm_info(get_type_name(), $sformatf("RX reg read = 0x%02x", rdata[7:0]), UVM_HIGH)
 
         
